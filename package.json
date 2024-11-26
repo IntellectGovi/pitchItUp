@@ -50,7 +50,7 @@
   },
   "packageManager": "npm@10.7.0",
   "overrides": {
-    "react": "$react",
-    "react-dom": "$react-dom"
+    "react": "^19.0.0-rc.1",
+    "react-dom": "^19.0.0-rc.1"
   }
 }
