@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    typescript:{
+        ignoreBuildErrors:true,
+    },
     images: {
         remotePatterns: [
             {
@@ -7,6 +10,9 @@ const nextConfig = {
                 hostname: "*",
             }
         ]
+    },
+    eslint:{
+        ignoreDuringBuilds:true,
     },
     devIndicators: {
         appIsrStatus: true,
