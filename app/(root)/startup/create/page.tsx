@@ -5,7 +5,7 @@ import StartupForm from "@/components/StartupForm";
 
 async function Page() {
   const session = await auth();
-  if (!session) redirect("/");
+  if (!session) redirect("https://pitch-it-up.vercel.app/");
 
   return (
     <>

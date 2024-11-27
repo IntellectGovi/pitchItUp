@@ -26,7 +26,7 @@ const Navbar = async () => {
                 action={async () => {
                   "use server";
 
-                  await signOut({ redirectTo: "/" });
+                  await signOut({ redirectTo: "https://pitch-it-up.vercel.app/" });
                 }}
               >
                 <button type="submit">
