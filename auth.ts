@@ -6,7 +6,12 @@ import { writeClient } from "@/sanity/lib/write-client";
 import { AUTHOR_BY_GITHUB_ID_QUERY } from "@/sanity/lib/queries";
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
-  providers: [GitHub],
+  providers: [
+    GitHub({
+      clientId: process.env.AUTH_GITHUB_ID!,
+      clientSecret: process.env.AUTH_GITHUB_SECRET!,
+    }),
+  ],
   callbacks: {
     async signIn({ user, account, profile }) {
       // Check if the user exists in Sanity
