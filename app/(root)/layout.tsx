@@ -9,7 +9,7 @@ export default function Layout({
     <main className="font-work-sans">
       <Navbar />
       {children}
-      <h1 className="text-center p-2">Made by Govind❤️</h1>
+      <h1 className="text-center p-2">Made by Adyant❤️</h1>
     </main>
   );
 }
